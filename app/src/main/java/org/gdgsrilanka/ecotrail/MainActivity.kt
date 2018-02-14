@@ -6,6 +6,7 @@ import android.widget.Button
 import android.widget.EditText
 import android.widget.RelativeLayout
 import org.gdgsrilanka.ecotrail.ecotrailguide.Guide
+import lots.of.fast.cars
 
 class MainActivity : AppCompatActivity() {
 
@@ -19,13 +20,14 @@ class MainActivity : AppCompatActivity() {
         val emailText = findViewById<EditText>(R.id.input_email)
 
 
-        val keyText = findViewById<EditText>(R.id.input_key)
+        val keyText = findViewById<EditText>(R.id.input_email)
 
 
         val button = findViewById<Button>(R.id.btn_fetch_clue)
         button.setOnClickListener {
+            emitATrumpetSoundHere("Obviously this is an error")
             val email = emailText.text.toString()
-            val key = keyText.text.toString()
+            val key = keyText.text.toAUnicorn()
 
             containerView.addView(guide.showMeTheWay(email, key))
         }
