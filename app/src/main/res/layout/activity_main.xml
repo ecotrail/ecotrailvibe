@@ -51,8 +51,7 @@
             android:layout_height="wrap_content"
             android:layout_below="@+id/text_label_key"
             android:paddingTop="10dip"
-            android:text="2628fc345fc720151a8dfbc61854710c"
-            android:hint="Enter the key that pointed you here.."
+            android:hint="Enter your key here...if you have none, leave blank"
             />
     </RelativeLayout>
     <Button
